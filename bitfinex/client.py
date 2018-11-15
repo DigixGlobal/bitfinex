@@ -305,11 +305,11 @@ class TradeClient:
 
         :return:
         """
-        _this_nonce = self._nonce;
-        print(_this_nonce);
+        # _this_nonce = self._nonce;
+        # print(_this_nonce);
         payload = {
             "request": "/v1/balances",
-            "nonce": "42.3"
+            "nonce": self._nonce
         }
 
         signed_payload = self._sign_payload(payload)
