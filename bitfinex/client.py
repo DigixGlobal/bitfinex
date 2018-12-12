@@ -212,7 +212,7 @@ class TradeClient:
             "request": "/v1/mytrades",
             "nonce": self._nonce,
             "symbol": symbol,
-            "timestamp": timestamp
+            "until": timestamp
         }
 
         signed_payload = self._sign_payload(payload)
